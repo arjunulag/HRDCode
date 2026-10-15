@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------
+# Data and results are never committed. PCAWG matrices, metadata, HRD labels
+# and all pipeline outputs live in workspace/ (or wherever you run from).
+# ---------------------------------------------------------------------------
+workspace/*
+!workspace/README.md
+
+# Input matrices / annotations (in case they are dropped at the repo root)
+*.tsv
+*.csv
+*.maf
+*.maf.gz
+PCAWG_HRD_STATUS.txt
+BRCA_HRD_annotation.txt
+CH179_*.txt
+CH295_*.txt
+EDA_summary_report.txt
+
+# Pipeline output directories
+Combined_Matrix/
+Combined_SBS_ID/
+SigProfiler_Results/
+SigProfiler_4Modality_Results/
+Split_Matrices/
+Visualizations/
+EDA_Figures/
+Sparsity_Analysis/
+Modality_Plots/
+Decomposition_Results/
+Decomposition_Individual/
+Refined_COSMIC_Comparison/
+Refined_HRD_ROC/
+Refined_HRD_ROC_HRDtypes/
+Figure1/
+Figure1_HRDtypes/
+Figure3/
+Figure3_Refined/
+Figure_HRD/
+JOB_METADATA*.txt
+
+# Rendered figures
+*.png
+*.pdf
+*.svg
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
